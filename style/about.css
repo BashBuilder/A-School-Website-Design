@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding-bottom: 50px;
+}
+
+.header-section {
+  width: 100%;
+  min-height: 50vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.7)), to(rgba(4, 9, 30, 0.7))), url(../pictures/graduation.jpg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../pictures/graduation.jpg);
+  background-position: center;
+  position: relative;
+}
+
+.header-section .top-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2% 6%;
+}
+
+.header-section .top-section img {
+  width: 80px;
+}
+
+.header-section .top-section i {
+  display: none;
+}
+
+.header-section .top-section .navigation {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+.header-section .top-section .navigation i {
+  display: none;
+}
+
+.header-section .top-section .navigation ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.header-section .top-section .navigation ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-section .top-section .navigation ul li a:hover::after {
+  width: 100%;
+}
+
+.header-section .top-section .navigation ul li a::after {
+  content: '';
+  background-color: #f44336;
+  width: 0;
+  height: 4px;
+  display: block;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.header-section h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 50px;
+}
+
+.about-us {
+  padding-top: 100px;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.about-us .about-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 3%;
+          column-gap: 3%;
+}
+
+.about-us .about-container .about-content {
+  -webkit-column-gap: 3%;
+          column-gap: 3%;
+  text-align: left !important;
+  padding: 0 10px;
+}
+
+.about-us .about-container .about-content h1 {
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+.about-us .about-container .about-content p {
+  color: #202020;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  text-align: justify !important;
+}
+
+.about-us .about-container .about-content a {
+  font-size: 18px;
+  text-decoration: none;
+  padding: 15px 35px;
+  border: #f44336 1px solid;
+  color: #f44336;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.about-us .about-container .about-content a:hover {
+  color: white;
+  background-color: #f44336;
+}
+
+.about-us .about-container .about-content img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
+
+.footer {
+  width: 80%;
+  text-align: center;
+  padding: 30px 0;
+  margin: auto;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-weight: 600;
+}
+
+.footer h4::before {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-color: #f44336;
+  margin: auto;
+  margin-bottom: 50px !important;
+}
+
+.footer p {
+  color: #505050;
+}
+
+.footer .icons i {
+  color: #f44336;
+  margin: 0 13px;
+  padding: 18px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer .fa-solid {
+  color: #f44336;
+  padding: 0 4px;
+}
+/*# sourceMappingURL=about.css.map */

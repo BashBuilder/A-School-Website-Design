@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding-bottom: 50px;
+}
+
+.header-section {
+  width: 100%;
+  min-height: 50vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 9, 30, 0.7)), to(rgba(4, 9, 30, 0.7))), url(../pictures/graduation.jpg);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(../pictures/graduation.jpg);
+  background-position: center;
+  position: relative;
+}
+
+.header-section .top-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2% 6%;
+}
+
+.header-section .top-section img {
+  width: 80px;
+}
+
+.header-section .top-section i {
+  display: none;
+}
+
+.header-section .top-section .navigation {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+.header-section .top-section .navigation i {
+  display: none;
+}
+
+.header-section .top-section .navigation ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.header-section .top-section .navigation ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-section .top-section .navigation ul li a:hover::after {
+  width: 100%;
+}
+
+.header-section .top-section .navigation ul li a::after {
+  content: '';
+  background-color: #f44336;
+  width: 0;
+  height: 4px;
+  display: block;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.header-section h1 {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 50px;
+}
+
+.course {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.course .course-text h1 {
+  font-size: 40px;
+}
+
+.course .course-text h1::before {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-color: #f44336;
+  margin: auto;
+  margin-bottom: 20px !important;
+}
+
+.course .course-text p {
+  margin: 10px 0;
+  color: gray;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.course .level-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin-top: 5%;
+  -webkit-column-gap: 5%;
+          column-gap: 5%;
+}
+
+.course .level-container div {
+  background-color: #fde0e0;
+  padding: 30px;
+  border-radius: 10px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.course .level-container div h3 {
+  margin-bottom: 20px;
+}
+
+.course .level-container div p {
+  color: gray;
+  text-align: justify;
+}
+
+.course .level-container div:hover {
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sections {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.sections .facilities-text h1 {
+  font-size: 40px;
+}
+
+.sections .facilities-text h1::before {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-color: #f44336;
+  margin: auto;
+  margin-bottom: 20px !important;
+}
+
+.sections .facilities-text p {
+  margin: 10px 0;
+  color: gray;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.sections .facilities-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sections .facilities-container .facilities-items {
+  margin: 15px;
+}
+
+.sections .facilities-container .facilities-items img {
+  width: 100%;
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.sections .facilities-container .facilities-items h3 {
+  margin: 5px 0;
+}
+
+.sections .facilities-container .facilities-items p {
+  color: gray;
+  text-align: justify !important;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.footer {
+  width: 80%;
+  text-align: center;
+  padding: 30px 0;
+  margin: auto;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-weight: 600;
+}
+
+.footer h4::before {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-color: #f44336;
+  margin: auto;
+  margin-bottom: 50px !important;
+}
+
+.footer p {
+  color: #505050;
+}
+
+.footer .icons i {
+  color: #f44336;
+  margin: 0 13px;
+  padding: 18px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer .fa-solid {
+  color: #f44336;
+  padding: 0 4px;
+}
+/*# sourceMappingURL=course.css.map */
